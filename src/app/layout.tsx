@@ -50,6 +50,7 @@ export default function RootLayout({
             `
           }}
         />
+        v 1.0
       </body>
     </html>
   );
