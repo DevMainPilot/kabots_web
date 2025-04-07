@@ -7,7 +7,7 @@ export type TranslationStructure = {
     nav: {
       services: string;
       about: string;
-      maintenance: string;
+      pricing: string;
       contact: string;
     };
     hero: {
@@ -36,6 +36,17 @@ export type TranslationStructure = {
         description: string;
         benefits: string[];
       };
+      mobile: {
+        title: string;
+        description: string;
+        benefits: string[];
+      };
+      chatbot: {
+        title: string;
+        description: string;
+        benefits: string[];
+      };
+      
       apps: {
         title: string;
         subtitle: string;
@@ -65,18 +76,26 @@ export type TranslationStructure = {
         };
       };
     };
-    testimonials: {
+    pricing: {
       title: string;
       subtitle: string;
-      items: {
-        [key: string]: {
-          name: string;
-          role: string;
-          company: string;
-          text: string;
+      chatbot: {
+        priceLabel: string;
+        plans: {
+          [key: string]: {
+            title: string;
+            price: string;
+            tagline: string;
+            popular?: boolean;
+            features: string[];
+            cta: string;
+          };
         };
       };
-    };
+      maintenance: {
+        priceLabel: string;
+      };
+    }    
     ourStory: {
       title: string;
       subtitle: string;
@@ -160,6 +179,7 @@ export type TranslationStructure = {
         };
       };
       copyright: string;
+      version: string;
     };
     cta: {
       contact: string;

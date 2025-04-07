@@ -7,7 +7,6 @@ import Hero from './components/sections/Hero';
 import Summary from './components/sections/Summary';
 import Services from './components/sections/Services';
 import AppsPlans from './components/sections/AppsPlans';
-import Maintenance from './components/sections/Maintenance';
 import Testimonials from './components/sections/Testimonials';
 import Contact from './components/sections/Contact';
 import { Lang } from './types';
@@ -22,8 +21,7 @@ export default function Home() {
       <Summary lang={lang} />
       <Testimonials lang={lang} />
       <Services lang={lang} />
-      <AppsPlans lang={lang} />
-      <Maintenance lang={lang} />      
+      <AppsPlans lang={lang} />       
       <Contact lang={lang} />
       <Footer lang={lang} setLang={setLang} />
     </div>

@@ -45,9 +45,9 @@ export default function Header({ lang, setLang }: HeaderProps) {
 
           {/* Menú per a desktop */}
           <div className="hidden md:flex space-x-8">
-            <a href="#services" className="text-gray-700 hover:text-indigo-600 transition-colors">{t('nav.services')}</a>
             <a href="#about" className="text-gray-700 hover:text-indigo-600 transition-colors">{t('nav.about')}</a>
-            <a href="#maintenance" className="text-gray-700 hover:text-indigo-600 transition-colors">{t('nav.maintenance')}</a>
+            <a href="#services" className="text-gray-700 hover:text-indigo-600 transition-colors">{t('nav.services')}</a>            
+            <a href="#pricing" className="text-gray-700 hover:text-indigo-600 transition-colors">{t('nav.pricing')}</a>
             <a href="#contact" className="text-gray-700 hover:text-indigo-600 transition-colors">{t('nav.contact')}</a>
           </div>
 
@@ -72,14 +72,14 @@ export default function Header({ lang, setLang }: HeaderProps) {
       {menuOpen && (
         <div className="md:hidden bg-white p-4 shadow-lg">
           <div className="flex flex-col space-y-3">
-            <a href="#services" className="text-gray-700 hover:text-indigo-600 py-2" onClick={() => setMenuOpen(false)}>
-              {t('nav.services')}
-            </a>
             <a href="#about" className="text-gray-700 hover:text-indigo-600 py-2" onClick={() => setMenuOpen(false)}>
               {t('nav.about')}
             </a>
-            <a href="#maintenance" className="text-gray-700 hover:text-indigo-600 py-2" onClick={() => setMenuOpen(false)}>
-              {t('nav.maintenance')}
+            <a href="#services" className="text-gray-700 hover:text-indigo-600 py-2" onClick={() => setMenuOpen(false)}>
+              {t('nav.services')}
+            </a>
+            <a href="#pricing" className="text-gray-700 hover:text-indigo-600 py-2" onClick={() => setMenuOpen(false)}>
+              {t('nav.pricing')}
             </a>
             <a href="#contact" className="text-gray-700 hover:text-indigo-600 py-2" onClick={() => setMenuOpen(false)}>
               {t('nav.contact')}

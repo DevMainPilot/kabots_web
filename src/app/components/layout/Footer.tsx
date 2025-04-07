@@ -1,6 +1,7 @@
 'use client';
 import { useTranslations } from '../../hooks/useTranslations';
 import { Lang } from '../../types';
+import { APP_CONFIG } from '../../config/config';
 
 interface FooterProps {
   lang: Lang;
@@ -12,7 +13,7 @@ export default function Footer({ lang, setLang }: FooterProps) {
 
   // Definir els enllaços de xarxes socials
   const socialLinks = {
-    linkedin: 'https://www.linkedin.com/albertmolinsdiez',
+    linkedin: 'https://www.linkedin.com/company/kabots',
     instagram: 'https://www.instagram.com/kabots_tech/'
   };
 
@@ -38,6 +39,7 @@ export default function Footer({ lang, setLang }: FooterProps) {
             <ul className="space-y-2">
               <li><a href="#about" className="text-gray-400 hover:text-white transition-colors">{t('footer.sections.company.links.about')}</a></li>
               <li><a href="#services" className="text-gray-400 hover:text-white transition-colors">{t('footer.sections.company.links.services')}</a></li>
+              <li><a href="#pricing" className="text-gray-400 hover:text-white transition-colors">{t('nav.pricing', 'Preus')}</a></li>
               <li><a href="#maintenance" className="text-gray-400 hover:text-white transition-colors">{t('footer.sections.company.links.maintenance')}</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.sections.company.links.blog')}</a></li>
             </ul>
@@ -96,7 +98,12 @@ export default function Footer({ lang, setLang }: FooterProps) {
         </div>
         
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400">{t('footer.copyright').replace('{year}', new Date().getFullYear().toString())}</p>
+          <div className="flex flex-col md:flex-row items-center">
+            <p className="text-gray-400">{t('footer.copyright').replace('{year}', APP_CONFIG.copyrightYear.toString())}</p>
+            <p className="text-gray-500 text-sm ml-0 md:ml-4 mt-2 md:mt-0">
+              {t('footer.version', 'Versió')} {APP_CONFIG.version}
+            </p>
+          </div>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <button 
               onClick={() => setLang('ca')} 
