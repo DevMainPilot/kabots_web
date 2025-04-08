@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description: 'Transformem el teu negoci amb enginyeria de prompting avançada i aplicacions mòbils intel·ligents',
     images:[
       {
-        url:'https://kabots.com/icona_og.png',
+        url:'https://kabots.com/good_robot.png',
         width: 1200,
         height: 630,
         alt: 'Kabots - Robot',
