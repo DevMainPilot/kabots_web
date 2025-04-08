@@ -1,0 +1,23 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fons blanc -->
+  <rect width="1200" height="630" fill="white"/>
+  
+  <!-- Cap del robot - Perfectament centrat -->
+  <g transform="translate(400, 125)">
+    <!-- Cap del robot -->
+    <rect x="0" y="0" width="400" height="380" rx="40" fill="#1A9C8B"/>
+    
+    <!-- Ulls -->
+    <circle cx="100" cy="120" r="50" fill="white"/>
+    <circle cx="300" cy="120" r="50" fill="white"/>
+    <circle cx="100" cy="120" r="25" fill="#125B52"/>
+    <circle cx="300" cy="120" r="25" fill="#125B52"/>
+    
+    <!-- Antena -->
+    <rect x="190" y="-60" width="20" height="60" fill="#1A9C8B"/>
+    <circle cx="200" cy="-80" r="20" fill="#1A9C8B"/>
+    
+    <!-- Boca -->
+    <rect x="140" y="240" width="120" height="20" rx="10" fill="white"/>
+  </g>
+</svg>

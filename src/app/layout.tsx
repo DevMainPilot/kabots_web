@@ -6,8 +6,23 @@ import Script from 'next/script';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://kabots.com'),
   title: 'Kabots - Solucions IA i Aplicacions',
   description: 'Transformem el teu negoci amb enginyeria de prompting avançada i aplicacions mòbils intel·ligents',
+  openGraph:{
+    title: 'Kabots - Solucions IA i Aplicacions',
+    description: 'Transformem el teu negoci amb enginyeria de prompting avançada i aplicacions mòbils intel·ligents',
+    images:[
+      {
+        url:'https://kabots.com/icona_og.svg',
+        width: 1200,
+        height: 630,
+        alt: 'Kabots - Robot',
+      },
+    ],
+    locale: 'ca_ES',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({
