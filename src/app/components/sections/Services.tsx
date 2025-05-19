@@ -153,6 +153,51 @@ export default function Services({ lang }: ServicesProps) {
             </div>
           </motion.div>
         </div>
+        
+        {/* Automation Service */}
+        <div className="mb-20">
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all border-t-4 border-indigo-600"
+          >
+            <div className="md:flex items-start">
+              <div className="md:w-1/3 mb-6 md:mb-0 md:pr-8">
+                <div className="bg-indigo-100 text-indigo-600 w-16 h-16 rounded-lg flex items-center justify-center mb-4">
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                  {t('services.automation.title')}
+                </h3>
+              </div>
+              <div className="md:w-2/3">
+                <p className="text-gray-600 mb-6 text-lg leading-relaxed">
+                  {t('services.automation.description')}
+                </p>
+                <ul className="mb-8 space-y-2">
+                  {t('services.automation.benefits').map((benefit: string, index: number) => (
+                    <li key={index} className="flex items-center text-gray-700">
+                      <svg className="w-5 h-5 text-indigo-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      {benefit}
+                    </li>
+                  ))}
+                </ul>
+                <a href="#contact" className="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition-colors inline-flex items-center">
+                  {t('cta.contact')}
+                  <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </motion.div>
+        </div>
       </div>
     </section>
   );

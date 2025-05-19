@@ -28,6 +28,17 @@ const english: TranslationStructure = {
   services: {
     title: 'Our Services',
     subtitle: 'Power your business with AI',
+    automation: {
+      title: "Automation",
+      description: "Optimize your business processes with our intelligent automation solutions. We eliminate repetitive tasks, reduce errors, and improve operational efficiency with advanced AI and workflow technologies.",
+      benefits: [
+        "Time savings and operational cost reduction",
+        "Integration with your existing applications and systems",
+        "Automation of complex business processes",
+        "Real-time analysis and performance reporting",
+        "Scalability to grow with your business"
+      ]
+    },
     prompting: {
       title: 'Advanced Prompt Engineering',
       description: 'We optimize your AI models through specialized prompt engineering that improves performance, reduces costs, and delivers more accurate results. Exclusive services for companies already using AI models who want to maximize their performance.',
@@ -67,7 +78,7 @@ const english: TranslationStructure = {
       plans: {
         basic: {
           title: 'Basic',
-          price: '€1,000',
+          price: 'Contact us!',
           features: [
             'Up to 2 main features',
             'Basic custom design',
@@ -79,7 +90,7 @@ const english: TranslationStructure = {
         },
         professional: {
           title: 'Professional',
-          price: '€1,500',
+          price: 'Contact us!',
           features: [
             'Up to 5 main features',
             'Advanced custom design',
@@ -91,7 +102,7 @@ const english: TranslationStructure = {
         },
         enterprise: {
           title: 'Enterprise',
-          price: 'From €2,000',
+          price: 'Contact us!',
           features: [
             'Unlimited features',
             'Exclusive premium design',
@@ -111,7 +122,7 @@ const english: TranslationStructure = {
       plans: {
         basic: {
           title: 'Basic Maintenance',
-          price: '€80/month',
+          price: 'Contact us!',
           tagline: 'Essential for any application',
           features: [
             'Security updates',
@@ -123,7 +134,7 @@ const english: TranslationStructure = {
         },
         standard: {
           title: 'Standard Maintenance',
-          price: '€100/month',
+          price: 'Contact us!',
           tagline: 'Ideal for most applications',
           popular: true,
           features: [
@@ -137,7 +148,7 @@ const english: TranslationStructure = {
         },
         premium: {
           title: 'Premium Maintenance',
-          price: '€150/month',
+          price: 'Contact us!',
           tagline: 'For high-value applications',
           features: [
             'Everything in Standard plan',
@@ -160,7 +171,7 @@ const english: TranslationStructure = {
       plans: {
         basic: {
           title: 'Basic Chatbot',
-          price: '€500',
+          price: 'Contact us!',
           tagline: 'Perfect for small businesses',
           features: [
             'Up to 30 conversation intents',
@@ -173,7 +184,7 @@ const english: TranslationStructure = {
         },
         standard: {
           title: 'Standard Chatbot',
-          price: '€900',
+          price: 'Contact us!',
           tagline: 'Recommended for most businesses',
           popular: true,
           features: [
@@ -188,7 +199,7 @@ const english: TranslationStructure = {
         },
         premium: {
           title: 'Intelligent Chatbot',
-          price: '€1,800',
+          price: 'Contact us!',
           tagline: 'For advanced requirements',
           features: [
             'Unlimited conversation intents',

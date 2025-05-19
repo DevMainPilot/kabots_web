@@ -28,6 +28,17 @@ const catalan: TranslationStructure = {
   services: {
     title: 'Els nostres serveis',
     subtitle: 'Potència el teu negoci amb IA',
+    automation: {
+      title: "Automatització",
+      description: "Optimitza els teus processos empresarials amb les nostres solucions d'automatització intel·ligent. Eliminem tasques repetitives, reduïm errors i millorem l'eficiència operativa amb tecnologies avançades d'IA i flux de treball.",
+      benefits: [
+        "Estalvi de temps i reducció de costos operatius",
+        "Integració amb les teves aplicacions i sistemes existents",
+        "Automatització de processos empresarials complexos",
+        "Anàlisi i reportes en temps real del rendiment",
+        "Escalabilitat per créixer amb el teu negoci"
+      ]
+    },
     prompting: {
       title: 'Enginyeria de Prompting Avançada',
       description: 'Optimitzem els vostres models d\'IA mitjançant una enginyeria de prompts especialitzada que millora el rendiment, redueix costos i ofereix resultats més precisos. Serveis exclusius per a empreses que ja utilitzen models d\'IA i volen maximitzar el seu rendiment.',
@@ -67,7 +78,7 @@ const catalan: TranslationStructure = {
       plans: {
         basic: {
           title: 'Bàsic',
-          price: '1000 €',
+          price: 'Consulta\'ns!',
           features: [
             'Fins a 2 funcionalitats principals',
             'Disseny personalitzat bàsic',
@@ -79,7 +90,7 @@ const catalan: TranslationStructure = {
         },
         professional: {
           title: 'Professional',
-          price: '1500 €',
+          price: 'Consulta\'ns!',
           features: [
             'Fins a 5 funcionalitats principals',
             'Disseny personalitzat avançat',
@@ -91,7 +102,7 @@ const catalan: TranslationStructure = {
         },
         enterprise: {
           title: 'Enterprise',
-          price: 'Des de 2000 €',
+          price: 'Consulta\'ns!',
           features: [
             'Funcionalitats il·limitades',
             'Disseny premium exclusiu',
@@ -111,7 +122,7 @@ const catalan: TranslationStructure = {
       plans: {
         basic: {
           title: 'Manteniment Bàsic',
-          price: '80€/mes',
+          price: 'Consulta\'ns!',
           tagline: 'Essencial per a qualsevol aplicació',
           features: [
             'Actualitzacions de seguretat',
@@ -123,7 +134,7 @@ const catalan: TranslationStructure = {
         },
         standard: {
           title: 'Manteniment Estàndard',
-          price: '100€/mes',
+          price: 'Consulta\'ns!',
           tagline: 'Ideal per a la majoria d\'aplicacions',
           popular: true,
           features: [
@@ -137,7 +148,7 @@ const catalan: TranslationStructure = {
         },
         premium: {
           title: 'Manteniment Premium',
-          price: '150€/mes',
+          price: 'Consulta\'ns!',
           tagline: 'Per a aplicacions d\'alt valor',
           features: [
             'Tot el del pla Estàndard',
@@ -160,7 +171,7 @@ const catalan: TranslationStructure = {
       plans: {
         basic: {
           title: 'Xatbot Bàsic',
-          price: '500 €',
+          price: 'Consulta\'ns!',
           tagline: 'Ideal per a petits negocis',
           features: [
             'Fins a 30 intents de conversa',
@@ -173,7 +184,7 @@ const catalan: TranslationStructure = {
         },
         standard: {
           title: 'Xatbot Estàndard',
-          price: '900 €',
+          price: 'Consulta\'ns!',
           tagline: 'Recomanat per a la majoria d\'empreses',
           popular: true,
           features: [
@@ -188,7 +199,7 @@ const catalan: TranslationStructure = {
         },
         premium: {
           title: 'Xatbot Intel·ligent',
-          price: '1.800 €',
+          price: 'Consulta\'ns!',
           tagline: 'Per a necessitats avançades',
           features: [
             'Intents de conversa il·limitats',

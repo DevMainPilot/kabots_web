@@ -31,6 +31,11 @@ export type TranslationStructure = {
     services: {
       title: string;
       subtitle: string;
+      automation: {
+        title: string;
+        description: string;
+        benefits: string[];
+      };
       prompting: {
         title: string;
         description: string;
