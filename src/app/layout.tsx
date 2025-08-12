@@ -55,7 +55,7 @@ export default function RootLayout({
                 const onLoad=function(){
                   const script=document.createElement("script");
                   script.src="https://www.chatbase.co/embed.min.js";
-                  script.id="Hxa8MjCUEtCXk5mFjC7UJ";
+                  script.id="t4ASGIZq_1mzR-XLJ_yf3";
                   script.domain="www.chatbase.co";
                   document.body.appendChild(script)
                 };
