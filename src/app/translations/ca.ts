@@ -7,6 +7,13 @@ const catalan: TranslationStructure = {
     pricing: 'Preus',
     contact: 'Contacte'
   },
+  brand: {
+    name: 'Kabots'
+  },
+  lang: {
+    ca: 'CA',
+    en: 'EN'
+  },
   hero: {
     title: 'Impulsa\'t amb tecnologia d\'avantguarda',
     subtitle: 'T’imagines entendre tot el que pot fer la IA per tu? A Kabots ho fem fàcil: t\'expliquem cada setmana com aplicar la tecnologia per guanyar temps i eficiència. Subscriu-te al nostre butlletí i transforma el futur amb nosaltres.'

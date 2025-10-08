@@ -7,6 +7,13 @@ const english: TranslationStructure = {
     pricing: 'Prices',
     contact: 'Contact'
   },
+  brand: {
+    name: 'Kabots'
+  },
+  lang: {
+    ca: 'CA',
+    en: 'EN'
+  },
   hero: {
     title: 'Boost yourself with cutting-edge technology',
     subtitle: "Can you imagine understanding everything AI can do for you? At Kabots we make it easy: we explain every week how to apply technology to save time and improve efficiency. Subscribe to our newsletter and transform the future with us."

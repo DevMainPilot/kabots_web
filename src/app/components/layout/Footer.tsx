@@ -28,7 +28,7 @@ export default function Footer({ lang, setLang }: FooterProps) {
                 <path d="M2 17L12 22L22 17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 <path d="M2 12L12 17L22 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-              Kabots
+              {t('brand.name')}
             </a>
             <p className="text-gray-400">{t('footer.description')}</p>
           </div>
@@ -109,13 +109,13 @@ export default function Footer({ lang, setLang }: FooterProps) {
               onClick={() => setLang('ca')} 
               className={`px-3 py-1 rounded-full text-sm ${lang === 'ca' ? 'bg-indigo-600 text-white' : 'bg-gray-800 text-gray-400 hover:text-white'}`}
             >
-              CA
+              {t('lang.ca')}
             </button>
             <button 
               onClick={() => setLang('en')} 
               className={`px-3 py-1 rounded-full text-sm ${lang === 'en' ? 'bg-indigo-600 text-white' : 'bg-gray-800 text-gray-400 hover:text-white'}`}
             >
-              EN
+              {t('lang.en')}
             </button>
           </div>
         </div>
