@@ -82,6 +82,24 @@ export default function RootLayout({
             `,
           }}
         />
+        {/* Auto-show MailerLite popup once per session (only runs on client) */}
+        <Script id="mailerlite-autoshow" strategy="afterInteractive">
+          {`
+            (function(){
+              try {
+                // only show once per session
+                if (typeof window !== 'undefined' && !sessionStorage.getItem('kabots_ml_shown')) {
+                  // small delay to allow MailerLite to initialize and bind
+                  setTimeout(function(){
+                    if (window.ml) {
+                      try { ml('show', 'nuR68M', true); sessionStorage.setItem('kabots_ml_shown', '1'); } catch(e) { /* ignore */ }
+                    }
+                  }, 800);
+                }
+              } catch(e) { }
+            })();
+          `}
+        </Script>
       </body>
     </html>
   );

@@ -272,6 +272,40 @@ const english: TranslationStructure = {
       }
     }
   },
+  privacyPage: {
+    title: 'Privacy Policy — Kabots',
+  // full content removed in favor of structured `sections` above
+    sections: {
+      responsible: {
+        title: 'Data Controller',
+        content: 'Kabots — contacte@kabots.com'
+      },
+      purpose: {
+        title: 'Purpose of processing',
+        content: 'We collect and process your personal data (name and email) in order to send our newsletter, commercial communications and content related to our digital solutions, applications and artificial intelligence services.'
+      },
+      legitimacion: {
+        title: 'Lawful basis',
+        content: 'The legal basis for processing is the consent you give us when you subscribe or contact us voluntarily.'
+      },
+      retention: {
+        title: 'Data retention',
+        content: 'Data will be retained while you maintain your subscription or until you request its deletion.'
+      },
+      transfer: {
+        title: 'Data sharing',
+        content: 'We do not share data with third parties, except when required by law or for strictly necessary services (such as the MailerLite platform, with which we have a data processing agreement in accordance with the GDPR).'
+      },
+      rights: {
+        title: 'Rights of data subjects',
+        content: 'You may access, rectify and delete your data, and object to or limit its processing by emailing info@kabots.com. You can also unsubscribe at any time using the links found at the bottom of each email.'
+      },
+      additional: {
+        title: 'Additional information',
+        content: 'Kabots complies with Regulation (EU) 2016/679 (GDPR) and Organic Law 3/2018 (LOPDGDD). For more information, please contact us at the above email.'
+      }
+    }
+  },
   footer: {
     description: 'Artificial intelligence solutions and custom mobile applications for your business.',
     sections: {

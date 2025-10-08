@@ -272,6 +272,41 @@ const catalan: TranslationStructure = {
       }
     }
   },
+  privacyPage: {
+    title: 'Política de privacitat — Kabots',
+  // full content removed in favor of structured `sections` above
+    // optional per-secció claus per renderitzar títols/contingut separadament (útil per aplicar negreta als títols)
+    sections: {
+      responsible: {
+        title: 'Responsable del tractament',
+        content: 'Kabots — contacte@kabots.com'
+      },
+      purpose: {
+        title: 'Finalitat del tractament',
+        content: 'Recollim i tractem les teves dades personals (nom i correu electrònic) amb la finalitat d’enviar-te el nostre butlletí informatiu, comunicacions comercials i continguts relacionats amb les nostres solucions digitals, aplicacions i serveis d’intel·ligència artificial.'
+      },
+      legitimacion: {
+        title: 'Legitimació',
+        content: 'La base legal per al tractament és el consentiment que ens dones en subscriure’t o contactar-nos voluntàriament.'
+      },
+      retention: {
+        title: 'Conservació de les dades',
+        content: 'Les dades es conservaran mentre mantinguis la teva subscripció o fins que ens sol·licitis la seva supressió.'
+      },
+      transfer: {
+        title: 'Cessió de dades',
+        content: 'No cedim dades a tercers, excepte per obligació legal o per serveis estrictament necessaris (com la plataforma MailerLite, amb qui mantenim un contracte de tractament de dades conforme al RGPD).'
+      },
+      rights: {
+        title: 'Drets de les persones interessades',
+        content: 'Pots accedir, rectificar i suprimir les teves dades, així com oposar-te o limitar el seu tractament, enviant un correu a info@kabots.com. També pots donar-te de baixa en qualsevol moment des dels enllaços que trobaràs al final de cada correu.'
+      },
+      additional: {
+        title: 'Informació addicional',
+        content: 'Kabots compleix el Reglament (UE) 2016/679 (RGPD) i la Llei Orgànica 3/2018 (LOPDGDD). Per a més informació, pots contactar-nos al correu anterior.'
+      }
+    }
+  },
   footer: {
     description: 'Solucions d\'intel·ligència artificial i aplicacions mòbils personalitzades per al teu negoci.',
     sections: {

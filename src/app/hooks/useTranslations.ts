@@ -9,7 +9,9 @@ export function useTranslations(lang: Lang) {
       const result = keys.reduce((obj: any, k) => obj?.[k], translations[lang]);
       return result !== undefined ? result : defaultValue;
     } catch (e) {
-      console.warn(`Translation key not found: ${key}`);
+      if (process.env.NODE_ENV !== 'production') {
+        console.warn(`Translation key not found: ${key}`);
+      }
       return defaultValue;
     }
   };

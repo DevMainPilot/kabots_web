@@ -101,7 +101,9 @@ export default function Contact({ lang }: ContactProps) {
             EMAIL_CONFIG.PUBLIC_KEY
           );
         } catch (autoReplyError) {
-          console.warn('Auto-reply failed but main message was sent:', autoReplyError);
+          if (process.env.NODE_ENV !== 'production') {
+            console.warn('Auto-reply failed but main message was sent:', autoReplyError);
+          }
         }
         
         // Indicar que tot ha anat bé i reiniciar el formulari
@@ -111,8 +113,10 @@ export default function Contact({ lang }: ContactProps) {
         throw new Error(`Failed with status: ${result.status}, text: ${result.text}`);
       }
     } catch (error: any) {
-      console.error('Error details:', error);
-      
+      if (process.env.NODE_ENV !== 'production') {
+        console.error('Error details:', error);
+      }
+
       setError(t('contact.errorMessage', 'Hi ha hagut un error. Intenta-ho de nou més tard.'));
     } finally {
       setLoading(false);
