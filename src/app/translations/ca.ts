@@ -307,6 +307,29 @@ const catalan: TranslationStructure = {
       }
     }
   },
+  cookiesPage: {
+    title: 'Política de Cookies',
+    sections: {
+      purpose: {
+        title: 'Finalitat',
+        content: "Utilitzem cookies pròpies i de tercers per millorar la navegació, analitzar l'ús del lloc i oferir continguts i anuncis personalitzats."
+      },
+      types: {
+        title: 'Tipus de cookies',
+        content: 'Inclou cookies tècniques, de rendiment i, amb el teu consentiment, cookies d\'anàlisi i publicitat.'
+      },
+      manage: {
+        title: 'Com gestionar-les',
+        content: 'Pots acceptar o rebutjar les cookies des del banner. També pots eliminar-les des de la configuració del teu navegador.'
+      }
+    }
+  },
+  cookiesBanner: {
+    text: "Aquest lloc utilitza cookies per millorar l'experiència. Pots acceptar o rebutjar aquestes cookies.",
+    accept: 'Acceptar',
+    reject: 'Rebutjar',
+    more: 'Més informació'
+  },
   footer: {
     description: 'Solucions d\'intel·ligència artificial i aplicacions mòbils personalitzades per al teu negoci.',
     sections: {

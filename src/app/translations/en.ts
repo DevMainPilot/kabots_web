@@ -306,6 +306,29 @@ const english: TranslationStructure = {
       }
     }
   },
+  cookiesPage: {
+    title: 'Cookies Policy',
+    sections: {
+      purpose: {
+        title: 'Purpose',
+        content: 'We use first and third-party cookies to improve navigation, analyze site usage and deliver personalized content and ads.'
+      },
+      types: {
+        title: 'Types of cookies',
+        content: 'Includes technical, performance cookies and, with your consent, analytics and advertising cookies.'
+      },
+      manage: {
+        title: 'How to manage',
+        content: 'You can accept or reject cookies from the banner. You can also delete them from your browser settings.'
+      }
+    }
+  },
+  cookiesBanner: {
+    text: 'This site uses cookies to improve your experience. You can accept or reject these cookies.',
+    accept: 'Accept',
+    reject: 'Reject',
+    more: 'More info'
+  },
   footer: {
     description: 'Artificial intelligence solutions and custom mobile applications for your business.',
     sections: {

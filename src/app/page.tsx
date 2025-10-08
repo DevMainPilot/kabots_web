@@ -37,6 +37,8 @@ export default function Home() {
       if (typeof window !== 'undefined') {
         window.localStorage.setItem('kabots_lang', l);
         (window as any).appLang = l;
+        // notify other client components about the language change
+        try { window.dispatchEvent(new CustomEvent('kabots:lang-changed', { detail: { lang: l } })); } catch(e) {}
       }
     } catch (e) {
       // ignore

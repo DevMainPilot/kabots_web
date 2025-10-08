@@ -50,7 +50,7 @@ export default function Footer({ lang, setLang }: FooterProps) {
             <h4 className="font-bold text-lg mb-4">{t('footer.sections.legal.title')}</h4>
             <ul className="space-y-2">
               <li><a href="/privacy" className="text-gray-400 hover:text-white transition-colors">{t('footer.sections.legal.links.privacy')}</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.sections.legal.links.cookies')}</a></li>
+              <li><a href="/cookies" className="text-gray-400 hover:text-white transition-colors">{t('footer.sections.legal.links.cookies')}</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.sections.legal.links.terms')}</a></li>
             </ul>
           </div>
