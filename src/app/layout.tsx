@@ -1,3 +1,4 @@
+// app/layout.tsx
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
@@ -9,12 +10,12 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://kabots.com'),
   title: 'Kabots - Solucions IA i Aplicacions',
   description: 'Transformem el teu negoci amb enginyeria de prompting avançada i aplicacions mòbils intel·ligents',
-  openGraph:{
+  openGraph: {
     title: 'Kabots - Solucions IA i Aplicacions',
     description: 'Transformem el teu negoci amb enginyeria de prompting avançada i aplicacions mòbils intel·ligents',
-    images:[
+    images: [
       {
-        url:'https://kabots.com/good_robot.png',
+        url: 'https://kabots.com/good_robot.png',
         width: 1200,
         height: 630,
         alt: 'Kabots - Robot',
@@ -34,7 +35,23 @@ export default function RootLayout({
     <html lang="ca" className="scroll-smooth">
       <body className={inter.className}>
         {children}
-        <Script 
+
+  {/* Server-rendered hidden anchor to ensure MailerLite binds to an ml-onclick-form element on load */}
+  <div dangerouslySetInnerHTML={{ __html: '<a id="ml-hidden-link" class="ml-onclick-form" href="javascript:void(0)" onclick="ml(\'show\', \'nuR68M\', true)" style="display:none"></a>' }} />
+
+  {/* MailerLite universal script (loaded before interactive to expose `ml`) */}
+        <Script id="mailerlite" strategy="beforeInteractive">
+          {`
+            (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+            .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+            n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+            (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+            ml('account', '1834104');
+          `}
+        </Script>
+
+  {/* Chatbase embed (unchanged) */}
+        <Script
           id="chatbase-embed"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -62,9 +79,9 @@ export default function RootLayout({
                 if(document.readyState==="complete"){onLoad()}
                 else{window.addEventListener("load",onLoad)}
               })();
-            `
+            `,
           }}
-        />        
+        />
       </body>
     </html>
   );

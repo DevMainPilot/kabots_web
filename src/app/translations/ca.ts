@@ -8,8 +8,8 @@ const catalan: TranslationStructure = {
     contact: 'Contacte'
   },
   hero: {
-    title: 'Impulsa el teu negoci amb tecnologia d\'avantguarda',
-    subtitle: 'Transformem el teu negoci amb aplicacions mòbils intel·ligents, xatbots i enginyeria de prompting avançada'
+    title: 'Impulsa\'t amb tecnologia d\'avantguarda',
+    subtitle: 'T’imagines entendre tot el que pot fer la IA per tu? A Kabots ho fem fàcil: t\'expliquem cada setmana com aplicar la tecnologia per guanyar temps i eficiència. Subscriu-te al nostre butlletí i transforma el futur amb nosaltres.'
   },
   summary: {
     custom: {
@@ -305,7 +305,7 @@ const catalan: TranslationStructure = {
   },
   cta: {
     contact: 'Sol·licitar consultoria',
-    start: 'Comença ara',
+    start: 'Subscriu-te ara',
     send: 'Enviar missatge',
     subscribe: 'Subscriu-te'
   }

@@ -8,8 +8,8 @@ const english: TranslationStructure = {
     contact: 'Contact'
   },
   hero: {
-    title: 'Boost your business with cutting-edge technology',
-    subtitle: 'Transform your business with intelligent mobile applications, chatbots and advanced prompt engineering'
+    title: 'Boost yourself with cutting-edge technology',
+    subtitle: "Can you imagine understanding everything AI can do for you? At Kabots we make it easy: we explain every week how to apply technology to save time and improve efficiency. Subscribe to our newsletter and transform the future with us."
   },
   summary: {
     custom: {
@@ -305,7 +305,7 @@ const english: TranslationStructure = {
   },
   cta: {
     contact: 'Request consultation',
-    start: 'Get started',
+    start: 'Subscribe now',
     send: 'Send message',
     subscribe: 'Subscribe'
   }

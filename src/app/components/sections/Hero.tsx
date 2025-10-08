@@ -23,6 +23,8 @@ export default function Hero({ lang }: HeroProps) {
           <rect width="100" height="100" fill="url(#grid)" />
         </svg>
       </div>
+  {/* subtle dark overlay to improve text contrast */}
+  <div className="absolute inset-0 bg-black/20 pointer-events-none" />
       
       <motion.div 
         initial="hidden" 
@@ -35,20 +37,26 @@ export default function Hero({ lang }: HeroProps) {
       >
         <motion.h1 
           variants={fadeInUp} 
-          className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight"
+          className="text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight drop-shadow-2xl"
         >
           {t('hero.title')}
         </motion.h1>
         <motion.p 
           variants={fadeInUp} 
-          className="text-xl md:text-2xl text-indigo-100 mb-10 max-w-3xl mx-auto"
+          className="text-xl md:text-2xl text-white mb-10 max-w-3xl mx-auto drop-shadow-md"
         >
           {t('hero.subtitle')}
         </motion.p>
         <motion.div variants={fadeInUp}>
-          <a 
-            href="#contact" 
-            className="bg-white text-indigo-700 font-medium px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 inline-block"
+          <a
+            href="#"
+            className="ml-onclick-form bg-white text-indigo-700 font-medium px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 inline-block"
+            onClick={(e) => {
+              e.preventDefault();
+              if (typeof window !== 'undefined' && window.ml) {
+                window.ml('show', 'nuR68M', true);
+              }
+            }}
           >
             {t('cta.start')}
           </a>
