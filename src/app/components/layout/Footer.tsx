@@ -83,6 +83,9 @@ export default function Footer({ lang, setLang }: FooterProps) {
                 </svg>
               </a>
             </div>
+
+{/*
+
             <div className="mt-6">
               <h4 className="font-bold text-lg mb-2">{t('footer.sections.social.newsletter.title')}</h4>
               <div className="flex mt-2">
@@ -94,6 +97,9 @@ export default function Footer({ lang, setLang }: FooterProps) {
                 </button>
               </div>
             </div>
+
+ */}
+
           </div>
         </div>
         
